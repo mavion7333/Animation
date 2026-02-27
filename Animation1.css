@@ -1,0 +1,197 @@
+.face {
+    height: 55vh;
+}
+.circle{
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transition: all 1s;
+}
+@keyframes myAnimation{
+     0%   { left: 0px; top: 0px; transform: rotate(360deg); }
+     5%   { left: 50px; }
+     10%  { left:100px; }
+     20%  { left:200px; }
+     30%  { left:300px; }
+     40%  { left:400px; }
+     50%  { left:500px; }
+     60%  { left:600px; }
+     70%  { left:700px; }
+     80%  { left:800px; }
+     90%  { left:900px; }
+     95%  { left:1000px;}
+     100% { left:1100px;}
+}
+.circle {
+   position: relative;
+    background-color: bisque;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 3px solid;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.eyebrow {
+    position: absolute;
+}
+
+#e1 {
+    position: absolute;
+    border-top: 3px solid;
+    top: 70px;
+    height: 25px;
+    width: 90px;
+    border-radius: 50%;
+    right: 25px;
+}
+
+#e2 {
+    position: absolute;
+    border-top: 3px solid;
+    height: 25px;
+    top: 70px;
+    width: 90px;
+    border-radius: 50%;
+    left: 30px;
+}
+
+.eyes {
+    overflow: hidden;
+}
+
+#eye1 {
+    position: absolute;
+    border: 2px solid;
+    background-color: bisque;
+    height: 100px;
+    width: 50px;
+    top: 90px;
+    right: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#d1 {
+    position: absolute;
+    background-color: black;
+    height: 41px;
+    width: 41px;
+    top: 60px;
+    border-radius: 50%;
+    left: 7px;
+}
+
+#eye2 {
+    position: absolute;
+    border: 2px solid;
+    background-color: bisque;
+    height: 100px;
+    width: 50px;
+    top: 90px;
+    left: 44px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#d2 {
+    position: absolute;
+    background-color: black;
+    height: 41px;
+    width: 41px;
+    top: 60px;
+    border-radius: 50%;
+    left: 7px;
+}
+
+.nose {
+    position: absolute;
+    background-color: bisque;
+    border: 1px solid;
+    top: 200px;
+    width: 10px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.smile {
+
+    position: absolute;
+    bottom: 32px;
+    height: 50px;
+    width: 130px;
+    border-radius: 50%;
+    border: none;
+    border-bottom: 2px solid;
+}
+/*========================================================*/
+@keyframes blink {
+    0%, 45%, 55%, 100% {
+        height: 100px;
+    }
+    50% {
+        height: 5px;   /* closed eye */
+    }
+}
+
+@keyframes hidePupil {
+    0%, 45%, 55%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+#eye2 {
+    position: absolute;
+    border: 2px solid;
+    background-color: bisque;
+    height: 100px;
+    width: 50px;
+    top: 90px;
+    left: 44px;
+    overflow: hidden;
+    border-radius: 50%;
+    
+    animation: blink 4s linear infinite;
+}
+
+/* pupil */
+#d2{
+    position: absolute;
+    background-color: black;
+    height: 41px;
+    width: 41px;
+    top: 60px;
+    border-radius: 50%;
+    left: 7px;
+    animation: hidePupil 4s linear infinite;
+}
+@keyframes smileMove {
+    0% {
+        width: 130px;
+        height: 50px;
+    }
+    50% {
+        width: 90px;
+        height: 30px; /* squeezed */
+    }
+    100% {
+        width: 130px;
+        height: 50px;
+    }
+}.smile {
+    position: absolute;
+    bottom: 32px;
+    height: 50px;
+    width: 130px;
+    border-radius: 50%;
+    border: none;
+    border-bottom: 2px solid;
+    animation: smileMove 4s ease-in-out infinite alternate;
+}
