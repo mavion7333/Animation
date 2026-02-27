@@ -1,0 +1,38 @@
+.animate{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 8s;
+  transition: all 1s;
+}
+
+@keyframes myAnimation {
+  0%   { background-color: red;
+         left:0px;
+         top:0px;
+        border-radius: 50%;
+       }
+
+  25%  { background-color: palevioletred;
+         left:200px;
+         top: 200px;
+        border-radius: 0%;}
+
+  50%  { background-color: blueviolet;
+         left:350px;
+         top:0px;
+        border-radius: 50%;}
+
+  75%  { background-color: green; 
+        left:500px;
+         top:200px;
+        border-radius: 0%;}
+
+  100% { background-color: greenyellow;
+         left:650px;
+         top:0px;
+         transform: rotate(180deg);
+        border-radius: 50%;}
+}
