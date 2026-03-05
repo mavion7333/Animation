@@ -1,0 +1,72 @@
+
+#wrapper {
+    margin: 9rem;    
+}
+.game {
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    border: 1px solid;
+    position: relative;
+}
+
+.bar1 {
+    position: absolute;
+    height: 200px;
+    width: 70px;
+    background-color: black;
+    left: 0;
+    animation-name: bar1;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 6;
+    transition: all 1s;
+}
+@keyframes bar1{
+    0%{top: 0;}
+    20%{top: 60px;}
+    40%{top: 120px;}
+    60%{top: 180px;}
+    80%{top: 240px;}
+    100%{top: 300px;}
+}
+.ball {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 190px;
+    animation-name: ball;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 6;
+    transition: all 1s;
+}
+@keyframes ball{
+    0%{left: 70px;}
+    20%{left: 200px;}
+    40%{left: 400px;}
+    60%{left: 600px;}
+    80%{left: 800px;}
+    100%{left: 1060px;}
+}
+.bar2 {
+    position: absolute;
+    height: 200px;
+    width: 70px;
+    background-color: black;
+    right: 0;
+    animation-name: bar2;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 6;
+}
+@keyframes bar2{
+    0%{bottom: 0;}
+    20%{bottom: 60px;}
+    40%{bottom: 120px;}
+    60%{bottom: 180px;}
+    80%{bottom: 240px;}
+    100%{bottom: 300px;}
+}
